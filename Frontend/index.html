@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkateSpotter</title>
+  <!-- Added version query string to CSS -->
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+  <header class="hero">
+    <h1>SkateSpotter</h1>
+    <p>Discover, Share, and Review Skateboarding Spots</p>
+  </header>
+
+  <main>
+    <section id="spot-list">
+      <h2>Popular Skate Spots</h2>
+      <div class="spots-container">
+        <!-- Spot cards will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <section id="add-spot">
+      <h2>Add a New Skate Spot</h2>
+      <form id="spot-form">
+        <input type="text" id="name" placeholder="Spot Name" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="url" id="image" placeholder="Image URL" required />
+        <textarea id="description" placeholder="Description" required></textarea>
+        <button type="submit">Add Spot</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SkateSpotter. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

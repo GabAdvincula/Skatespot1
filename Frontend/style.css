@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif; /* Simple, clean font */
+  background-color: #ffffff; /* Light gray for a minimalist background */
+  color: #333; /* Dark gray for text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+header.hero {
+  background: linear-gradient(to right, #000, #333); /* Skateboard deck-inspired gradient */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a bold shadow */
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+header.hero p {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-style: italic; /* Adds a grungy, casual look */
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+}
+
+/* Section Titles */
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #e63946; /* Skateboard red accent */
+  border-bottom: 3px solid #e63946;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Popular Skate Spots */
+.spots-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* Spot Card */
+.spot-card {
+  background: #f9f9f9; /* Light gray card background */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds bold shadows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spot-card:hover {
+  transform: translateY(-8px); /* Hover effect mimicking a skateboard pop */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.spot-card img {
+  width: 100%;
+  height: 180px; /* Slightly larger images */
+  object-fit: cover;
+  border-bottom: 2px solid #e63946; /* Adds a red bottom edge */
+}
+
+.spot-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 10px 5px;
+}
+
+.spot-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 10px;
+}
+
+/* Add Spot Section */
+#add-spot {
+  background: #fefefe; /* Clean white background */
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-spot h2 {
+  color: #333;
+}
+
+#spot-form {
+  display: grid;
+  gap: 15px; /* Space between form items */
+}
+
+#spot-form input,
+#spot-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#spot-form button {
+  padding: 10px;
+  background-color: #e63946; /* Red button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#spot-form button:hover {
+  background-color: #d62839; /* Slightly darker red on hover */
+}
+
+/* Footer (Optional) */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
